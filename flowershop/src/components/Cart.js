@@ -18,8 +18,8 @@ export default function Cart(props) {
                 {props.getCart.map((item, index) => (
                  <tr key={index}>
                     <td>{item.flowerName}</td>
-                    <td>{item.quanyity}</td>
-                    <td>{item.quanyity*item.flowerPrice}</td>
+                    <td>{item.quantity}</td>
+                    <td>{item.quantity*item.flowerPrice}</td>
                  </tr>  
                 ))}
                 <tr>
