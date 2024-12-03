@@ -1,9 +1,9 @@
+import '../assets/CSS/layout.css';
 import Product from './Product'
 import Cart from './Cart'
-import '../assets/CSS/layout.css';
 import {useState} from 'react';
 
-export default function Products(props){
+export default function Products(){
    
 const[getCart,setCart]=useState([])
 

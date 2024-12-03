@@ -1,6 +1,6 @@
 import '../assets/CSS/layout.css';
-import { flowers } from './FlowerDB';
-import {useState} from 'react'
+import {flowers} from './FlowerDB';
+import React, {useState} from 'react'
 
 export default function Product(props){
   const [inputValue,setInputValue]=useState();
