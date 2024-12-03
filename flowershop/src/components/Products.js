@@ -1,10 +1,12 @@
 import Product from './Product'
 import Cart from './Cart'
 import '../assets/CSS/layout.css';
-
+import {useState} from 'react';
 
 export default function Products(props){
    
+const[getCart,setCart]=useState([])
+
     return(
         <>
             <div className="item1">
@@ -15,7 +17,7 @@ export default function Products(props){
                 <div className="grid-container">
                     {
                         //product
-                        <Product/>
+                        <Product setCart={setCart}/>
                     }
                 </div>
 
@@ -23,7 +25,7 @@ export default function Products(props){
             <div className="item3">
                 {
                 //cart
-                <Cart/>
+                <Cart getCart={getCart}/>
                 }
             </div>
         </>
